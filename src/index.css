@@ -33,15 +33,17 @@ body {
 
 h1{
   font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-weight: 600;
+  font-size: clamp(2rem, 4.3vw, 4.5rem);
+  line-height: 1;
 }
 .subheading{
   font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
+  font-weight: 500;
 
 }
 section > .container-fluid, footer > .container-fluid{
-  padding:5% 7%;
+  padding:5% 6%;
 }
 .homeBadge, .homeBadgeParent{
    color: var(--light-gold);
@@ -76,7 +78,7 @@ p.subtopic {
   border: none;
   margin: 0;
   padding: 0;
-  color: var(--burnished-gold);
+  color: var(--primary-blue);
 }
 .btn{
   text-transform: capitalize;
@@ -88,18 +90,21 @@ p.subtopic {
 .btnAlternate, .btnAlternate:hover{
   background: var(--burnished-gold);
   color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .btnSecondary, .btnSecondary:hover{
   background: var(--white);
   color:var(--primary-blue);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .btnPrimary, .btnPrimary:hover{
   background: var(--primary-blue);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   
 }
 .btn-xl {
   padding: 1rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border-radius: 0.5rem;
 }
 
@@ -122,3 +127,7 @@ nav .container-fluid{
   padding:0 7% ;
 }
 
+/* hero--hero--hero--hero */
+#hero{
+  background-color:var(--off-white);
+}
