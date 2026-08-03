@@ -1,5 +1,6 @@
 import { FlatButton } from "../../../shared/FlatButton"
 import {CheckOutlined} from '@ant-design/icons';
+import heroImage from '../../../assets/teachingGerman.png';
 
 export const Hero = ()=>{
     return(
@@ -7,6 +8,16 @@ export const Hero = ()=>{
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-6">
+                        
+                        <div className="heroBadge">
+                            
+                        <span className='homeBadgeParent '> 
+                            <span className='homeBadge'></span>
+                            Est.2020 · CAC Registered
+                            </span>
+                        </div>
+                        <br/>
+                        
                         <h1>
                             Learn German <span style={{color:'var(--primary-blue)'}}>With Confidence</span>
                         </h1>
@@ -31,6 +42,18 @@ export const Hero = ()=>{
                                 <small style={{display:"flex", gap:'12px'}}><CheckOutlined/> Exam prep included</small>
 
                             </div>
+                        </div>
+                    </div>
+
+
+                    <div className="col-md-6">
+                        <div className="heroImage"
+                        style={{
+                            backgroundImage: `url(${heroImage})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition:'center',
+                            borderRadius:'10px',    }}>
+
                         </div>
                     </div>
                 </div>

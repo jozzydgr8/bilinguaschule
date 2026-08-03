@@ -11,6 +11,7 @@ body {
   --primary-blue: #243F5F;
   --primary-blue-dark: #1A2F48;
   --primary-blue-light: #3B5C84;
+  --primary-blue-transparent: rgba(59, 92, 132, 0.2);
 
   /* Neutral Colors */
   --white: #FFFFFF;
@@ -22,7 +23,9 @@ body {
 
   /* Accent Colors */
   --gold: #C9A34E;
-  --gold-light: #D9B76A;
+  --light-gold: #E6C76A;
+    --burnished-gold: #b8860b;
+ --transparent-gold: rgba(184, 134, 11, 0.2);
   --gold-dark: #A9852D;
 
   
@@ -39,29 +42,40 @@ h1{
 }
 .subheading{
   font-family: "Cormorant Garamond", serif;
-  font-weight: 500;
+  font-weight: 600;
 
 }
 section > .container-fluid, footer > .container-fluid{
   padding:5% 6%;
 }
-.homeBadge, .homeBadgeParent{
-   color: var(--light-gold);
+.homeBadgeParent,.homeBadgeParentAlt{
   text-transform: uppercase;
-  font-size: 0.77rem;   
-  white-space: nowrap;
-  font-weight:bold;
-}
-.homeBadgeParent{
-  background-color: var(--transparent-gold);
- 
   padding: 3px 12px;
   border-radius: 20px;
   margin-top: 8px;
-  
+  font-weight:bold;
+  vertical-align: middle;
   width: fit-content;
+}
+ .homeBadgeParentAlt{
+  color:var(--light-gold);
+  background-color: var(--burnished-gold);
+}
+.homeBadgeParent{
+  background-color: var(--primary-blue-transparent);
+  color: var(--primary-blue-dark);
+  
  
   
+}
+.homeBadge{
+   display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: var(--primary-blue-light);
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
   
 }
 
@@ -130,4 +144,12 @@ nav .container-fluid{
 /* hero--hero--hero--hero */
 #hero{
   background-color:var(--off-white);
+}
+.heroImage{
+  min-height:500px;
+}
+@media (max-width:750px) {
+  .heroImage{
+    min-height:300px;
+  }
 }
