@@ -12,7 +12,7 @@ export const Potential = ()=>{
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <div className="heroImage"
+                        <div className="homeImage"
                             style={{
                                 backgroundImage: `url(${potentialImage})`,
                                 backgroundSize: 'cover',

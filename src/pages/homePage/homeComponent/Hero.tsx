@@ -1,5 +1,5 @@
 import { FlatButton } from "../../../shared/FlatButton"
-import {CheckOutlined} from '@ant-design/icons';
+import {CheckOutlined, ArrowRightOutlined} from '@ant-design/icons';
 import heroImage from '../../../assets/teachingGerman.png';
 
 export const Hero = ()=>{
@@ -13,33 +13,34 @@ export const Hero = ()=>{
                             
                         <span className='homeBadgeParent '> 
                             <span className='homeBadge'></span>
-                            Est.2020 · CAC Registered
+                            Live Online Classes — Learn From Anywhere
                             </span>
                         </div>
                         <br/>
                         
                         <h1>
-                            Learn German <span style={{color:'var(--primary-blue)'}}>With Confidence</span>
+                           Learn German Online <span style={{color:'var(--primary-blue)'}}>with Bilinguaschule</span>
                         </h1>
                         <br/>
                         <p className='subtopic'>
-                            Flexible online German courses from A1 beginner to B1 intermediate. Our bilingual teachers explain concepts in English when needed, so you never feel lost. Master speaking, writing, and exam preparation at your pace.
+                          At Bilinguaschule, we're committed to helping you master German and succeed in your German language certification exams. Whether you're a beginner or advancing your skills, our experienced instructors deliver engaging, structured online lessons designed to help you reach your goals with confidence.
+
                         </p>
                         <div>
-                            <FlatButton title='Start Learning Today' className=" btn btn-xl btnPrimary"/> <FlatButton title='see how it works' className='btn btn-xl btnSecondary'/>
+                            <FlatButton icon={<ArrowRightOutlined />} title='begin your journey' className=" btn btn-xl btnPrimary"/> <FlatButton title='view our courses' className='btn btn-xl btnSecondary'/>
                         </div>
                         <br/>
 
                         <div className="row heroBottom">
                             <div className="col-md-4 mb-2">
-                                <small style={{display:"flex", gap:'12px'}}><CheckOutlined/> Free trial lesson</small>
+                                <small style={{display:"flex", gap:'12px'}}><CheckOutlined style={{color:'var(--primary-blue)'}}/> Free trial lesson</small>
                             </div>
                             <div className="col-md-4 mb-2">
-                                <small style={{display:"flex", gap:'12px'}}><CheckOutlined/> Small group classes</small>
+                                <small style={{display:"flex", gap:'12px'}}><CheckOutlined style={{color:'var(--primary-blue)'}}/> Small group classes</small>
 
                             </div>
                             <div className="col-md-4 mb-2">
-                                <small style={{display:"flex", gap:'12px'}}><CheckOutlined/> Exam prep included</small>
+                                <small style={{display:"flex", gap:'12px'}}><CheckOutlined style={{color:'var(--primary-blue)'}}/> Exam prep included</small>
 
                             </div>
                         </div>
@@ -47,7 +48,7 @@ export const Hero = ()=>{
 
 
                     <div className="col-md-6">
-                        <div className="heroImage"
+                        <div className="homeImage"
                         style={{
                             backgroundImage: `url(${heroImage})`,
                             backgroundSize: 'cover',
