@@ -14,8 +14,8 @@ export const Courses = ()=>{
                     <div className="row">
                         {
                             germanCourses.map(course=>(
-                                <div className="col-md-3 d-flex" key={course.id}>
-                                    <div className="course-card h-100 d-flex flex-column">
+                                <div className="col-md-3 d-flex mb-4" key={course.id}>
+                                    <div className="course-card h-100 d-flex flex-column ">
                                         <div style={{width:"fit-content", fontSize: '1rem',color:'var(--primary-blue-dark)', backgroundColor: 'var(--primary-blue-transparent)', padding: '7px 15px', borderRadius: '10px' }}>
                                             {course.level}
                                         </div><br/>

@@ -15,8 +15,8 @@ export const Choose = ()=>{
                <div className="row">
                 {
                     whyChooseUs.map(choose=>(
-                        <div className='col-md-3' key={choose.id}>
-                            <div className="choose-card h-100 mb-3">
+                        <div className='col-md-3 mb-4' key={choose.id}>
+                            <div className="choose-card h-100 ">
                                 <div style={{width:"fit-content", fontSize: '2rem',color:'var(--primary-blue-dark)', backgroundColor: 'var(--primary-blue-transparent)', padding: '7px 15px', borderRadius: '10px' }}>
                                     {choose.icon}
                                 </div>

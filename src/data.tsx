@@ -3,6 +3,11 @@ import {
   BulbOutlined,
   UserOutlined,
   TrophyOutlined,
+   SmileOutlined,
+  SoundOutlined,
+  TeamOutlined,
+  GlobalOutlined,
+  
 } from "@ant-design/icons";
 
 export const whyChooseUs = [
@@ -92,5 +97,78 @@ export const germanCourses = [
     tuition: "₦400,000",
     feeType: "One-time tuition fee",
     buttonText: "Enroll Now",
+  },
+];
+
+export const expectations = [
+  {
+    "id": 1,
+    "title": "Live online classes"
+  },
+  {
+    "id": 2,
+    "title": "Small class sizes",
+    "description": "Maximum of 12 students per class"
+  },
+  {
+    "id": 3,
+    "title": "Flexible course start dates"
+  },
+  {
+    "id": 4,
+    "title": "Structured curriculum",
+    "description": "Aligned with CEFR levels"
+  },
+  {
+    "id": 5,
+    "title": "Comprehensive exam preparation"
+  },
+  {
+    "id": 6,
+    "title": "Interactive learning environment"
+  },
+  {
+    "id": 7,
+    "title": "Continuous support",
+    "description": "From experienced instructors"
+  }
+]
+
+export const benefits = [
+  {
+    icon: <SmileOutlined />,
+    title: "Learn Through Play",
+    description:
+      "Interactive games, songs, and storytelling make learning German fun and engaging.",
+  },
+  {
+    icon: <SoundOutlined />,
+    title: "Active Speaking Practice",
+    description:
+      "Children get plenty of opportunities to speak and practice German in every lesson.",
+  },
+  {
+    icon: <BulbOutlined />,
+    title: "Think Bigger",
+    description:
+      "Develop problem-solving, creativity, and critical thinking through bilingual learning.",
+  },
+  {
+    icon: <TeamOutlined />,
+    title: "Personalized Learning",
+    description:
+      "Small class sizes ensure every child receives individual attention and support.",
+  },
+  {
+    icon: <GlobalOutlined />,
+    title: "Global Opportunities",
+    description:
+      "Build a foundation for international education, travel, and future career opportunities.",
+  },
+  {
+    icon: <TrophyOutlined />,
+    title: "Celebrate Every Milestone",
+    description:
+      "Track progress with regular feedback and certificates that recognize achievement.",
   },
 ];

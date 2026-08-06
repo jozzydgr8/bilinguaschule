@@ -143,9 +143,7 @@ nav .container-fluid{
 }
 
 /* hero--hero--hero--hero */
-#hero{
-  /* background-color:var(--off-white); */
-}
+
 .homeImage{
   min-height:500px;
 }
@@ -156,10 +154,10 @@ nav .container-fluid{
 }
 
 /* choose--choose--choose */
-#choose{
+#choose, #expectation{
   background-color: var(--light-blue);
 }
-.choose-card, .course-card{
+.choose-card, .course-card, .expectation-card{
   background-color: white;
   padding:30px;
   border-radius: 10px;

@@ -13,7 +13,7 @@ export const Hero = ()=>{
                             
                         <span className='homeBadgeParent '> 
                             <span className='homeBadge'></span>
-                            Live Online Classes — Learn From Anywhere
+                            Learn From Anywhere
                             </span>
                         </div>
                         <br/>
