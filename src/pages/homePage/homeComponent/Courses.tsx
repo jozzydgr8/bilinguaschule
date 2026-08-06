@@ -6,7 +6,7 @@ export const Courses = ()=>{
         <section>
             <div className="container-fluid">
                 <div className="text-center">
-                    <span className='homeBadgeParent'>Our Course</span>
+                    <span className='homeBadgeParent'>Our Courses</span>
                     
                     <h2 className='subheading mt-2'>German Courses for Every Level</h2>
                     <p className='subtopic'>All courses are delivered live online in small groups, allowing for interactive lessons and personalized attention.</p>

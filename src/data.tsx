@@ -7,6 +7,8 @@ import {
   SoundOutlined,
   TeamOutlined,
   GlobalOutlined,
+  LaptopOutlined,
+  CustomerServiceOutlined,
   
 } from "@ant-design/icons";
 
@@ -170,5 +172,21 @@ export const benefits = [
     title: "Celebrate Every Milestone",
     description:
       "Track progress with regular feedback and certificates that recognize achievement.",
+  },
+];
+
+
+export const features = [
+  {
+    id: 1,
+    title: "Live Online Classes",
+    description: "Learn from anywhere — all you need is internet.",
+    icon: <LaptopOutlined />,
+  },
+  {
+    id: 2,
+    title: "Dedicated Support",
+    description: "Instructors who care about your success.",
+    icon: <CustomerServiceOutlined />,
   },
 ];
