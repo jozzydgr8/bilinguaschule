@@ -16,7 +16,7 @@ export const Expectation = ()=>{
                         expectations.map(data=>(
                             <div className="col-md-4" key={data.id}>
                                 
-                                <div className=" expectation-card d-flex align-items-center mb-4" style={{display:'flex', gap:"15px",}}>
+                                <div className=" expectation-card d-flex align-items-center mb-4 animate-up" style={{display:'flex', gap:"15px",}}>
                                     <div style={{width:"fit-content", fontSize: '1.5rem',color:'var(--burnished-gold)', backgroundColor: 'var(--transparent-gold)', padding: '5px 13px', borderRadius: '10px' }}>
                                     <CheckOutlined/>
                                     </div>

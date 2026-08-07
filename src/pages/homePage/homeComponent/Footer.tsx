@@ -5,16 +5,24 @@ import {PhoneOutlined,InstagramOutlined,TwitterOutlined,TikTokOutlined,
 
 import { FlatButton } from '../../../shared/FlatButton';
 import businessLogo from '../../../assets/businessLogo.png';
+import { handleEmailSend } from '../../../shared/handleEmailSend';
 export const Footer = ()=>{
     return(
         <footer>
             <div className="container-fluid">
                 <div className="d-flex justify-content-between align-items-center mb-4">
-                    <div >
+                    <div className='animate-left' >
                         <h2>Ready to start learning German?</h2>
                         <small style={{color:'gray'}}>Join Bilinguaschule today and start speaking German with confidence.</small>
                     </div>
-                    <FlatButton title='Start learning today' className='btn btn-lg btnSecondary' icon={<ArrowRightOutlined/>}/>
+                    <FlatButton
+                    onClick={() =>
+                        handleEmailSend(
+                        "German Course Enquiry",
+                        "Hello, I would like to start learning German with Bilinguaschule. Please send me information about your available courses, schedules, fees, and how I can get started."
+                        )
+                    }
+                     title='Start learning today' className=' animate-right btn btn-lg btnSecondary' icon={<ArrowRightOutlined/>}/>
                 </div>
                 <br/>
                 <hr/>

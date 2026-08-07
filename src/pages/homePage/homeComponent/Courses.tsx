@@ -1,9 +1,10 @@
 import { germanCourses } from "../../../data"
 import { FlatButton } from "../../../shared/FlatButton"
+import { handleEmailSend } from "../../../shared/handleEmailSend"
 
 export const Courses = ()=>{
     return(
-        <section>
+        <section id="courses">
             <div className="container-fluid">
                 <div className="text-center">
                     <span className='homeBadgeParent'>Our Courses</span>
@@ -15,7 +16,7 @@ export const Courses = ()=>{
                         {
                             germanCourses.map(course=>(
                                 <div className="col-md-3 d-flex mb-4" key={course.id}>
-                                    <div className="course-card h-100 d-flex flex-column ">
+                                    <div className="course-card h-100 d-flex flex-column animate-up ">
                                         <div style={{width:"fit-content", fontSize: '1rem',color:'var(--primary-blue-dark)', backgroundColor: 'var(--primary-blue-transparent)', padding: '7px 15px', borderRadius: '10px' }}>
                                             {course.level}
                                         </div><br/>
@@ -48,6 +49,7 @@ export const Courses = ()=>{
                                         <FlatButton
                                             title="Enroll Now"
                                             className="btn btnPrimary w-100"
+                                            onClick={()=>handleEmailSend(course.subject, course.message)}
                                         />
                                         </div>
                                     </div>

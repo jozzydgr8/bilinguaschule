@@ -56,7 +56,9 @@ export const germanCourses = [
     classSize: "Max. 12 students",
     tuition: "₦280,000",
     feeType: "One-time tuition fee",
-    buttonText: "Enroll Now",
+    subject: "A1 Beginner Course Enquiry",
+    message:
+      "Hello, I would like to enroll in the A1 Beginner German course. Please share the registration process and the next available class.",
   },
   {
     id: 2,
@@ -70,7 +72,9 @@ export const germanCourses = [
     classSize: "Max. 12 students",
     tuition: "₦280,000",
     feeType: "One-time tuition fee",
-    buttonText: "Enroll Now",
+    subject: "A2 Elementary Course Enquiry",
+    message:
+      "Hello, I would like to enroll in the A2 Elementary German course. Please share the registration process and the next available class.",
   },
   {
     id: 3,
@@ -84,7 +88,9 @@ export const germanCourses = [
     classSize: "Max. 12 students",
     tuition: "₦380,000",
     feeType: "One-time tuition fee",
-    buttonText: "Enroll Now",
+    subject: "B1 Intermediate Course Enquiry",
+    message:
+      "Hello, I would like to enroll in the B1 Intermediate German course. Please share the registration process and the next available class.",
   },
   {
     id: 4,
@@ -98,7 +104,9 @@ export const germanCourses = [
     classSize: "Max. 12 students",
     tuition: "₦400,000",
     feeType: "One-time tuition fee",
-    buttonText: "Enroll Now",
+    subject: "B2 Upper Intermediate Course Enquiry",
+    message:
+      "Hello, I would like to enroll in the B2 Upper Intermediate German course. Please share the registration process and the next available class.",
   },
 ];
 

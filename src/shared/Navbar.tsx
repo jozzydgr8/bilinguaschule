@@ -26,24 +26,24 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a href={`/`} className="nav-link active">
                     Home
               </a>
-            </li>
+            </li> */}
 
             <li className="nav-item">
-              <a href={`/`} className="nav-link active">
+              <a href={`/#courses`} className="nav-link active">
                    German Courses
               </a>
             </li>
             <li className="nav-item">
-              <a href={`#about`} className="nav-link active">
+              <a href={`#expectation`} className="nav-link active">
                     How it Works
               </a>
             </li>
             <li className="nav-item">
-              <a href={`#services`} className="nav-link active">
+              <a href={`#courses`} className="nav-link active">
                     Pricing
               </a>
             </li>
@@ -51,7 +51,15 @@ export const Navbar = () => {
             
             <li className="nav-item">
            
-                <FlatButton title='Start Learning Today' className='btn btnPrimary 'onClick={()=>handleRequest('Hi, I’d like to start learning german language')}/>
+                <FlatButton
+                title="Start Learning Today"
+                className="btn btnPrimary"
+                onClick={() =>
+                  handleRequest(
+                    "Hello! I'm interested in learning German with Bilinguaschule. I'd like to know more about your classes."
+                  )
+                }
+              />
              
             </li>
 

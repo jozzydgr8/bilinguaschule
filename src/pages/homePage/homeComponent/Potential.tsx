@@ -2,6 +2,7 @@ import potentialImage from '../../../assets/children-having-fun-learning-german.
 import { benefits } from '../../../data';
 import { FlatButton } from '../../../shared/FlatButton';
 import {ArrowRightOutlined} from '@ant-design/icons';
+import { handleEmailSend } from '../../../shared/handleEmailSend';
 export const Potential = ()=>{
     return(
         <section>
@@ -16,7 +17,7 @@ export const Potential = ()=>{
                                 {
                                     benefits.map((data, index)=>(
                                         <div key={index} className='d-flex align-items-center mb-4' style={{display:'flex',gap:'15px'}}>
-                                            <div style={{width:"fit-content", fontSize: '2rem',color:'var(--burnished-gold)', backgroundColor: 'var(--transparent-gold)', padding: '7px 15px', borderRadius: '10px' }}>{data.icon}</div>
+                                            <div className='animate-left' style={{width:"fit-content", fontSize: '2rem',color:'var(--burnished-gold)', backgroundColor: 'var(--transparent-gold)', padding: '7px 15px', borderRadius: '10px' }}>{data.icon}</div>
                                             <div>
                                                 <h4 style={{color:'var(--burnished-gold)'}} className='subheading'>{data.title}</h4>
                                                
@@ -27,11 +28,18 @@ export const Potential = ()=>{
                                 }
 
                             <br/>
-                            <FlatButton title='Start Learning today' icon={<ArrowRightOutlined/>} className='btn btnAlternate btn-xl'/>
+                            <FlatButton
+                              onClick={() =>
+                                handleEmailSend(
+                                "Children's German Course Enquiry",
+                                "Hello, I am interested in enrolling my child in your German language classes. Please share your class schedule, fees, and how to book a free trial lesson."
+                                )
+                            } 
+                            title='Start Learning today' icon={<ArrowRightOutlined/>} className='btn btnAlternate btn-xl animate-up'/>
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <div className="homeImage"
+                        <div className="homeImage animate-right"
                             style={{
                                 backgroundImage: `url(${potentialImage})`,
                                 backgroundSize: 'cover',

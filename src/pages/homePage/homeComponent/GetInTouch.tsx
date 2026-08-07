@@ -17,7 +17,7 @@ export const GetInTouch = ()=>{
                             {
                                 features.map((feature, index)=>(
                                     <div className="d-flex align-items-center mb-4" style={{display:'flex', gap:"15px"}} key={index}>
-                                        <div style={{width:"fit-content", fontSize: '2rem',color:'var(--primary-blue-dark)', backgroundColor: 'var(--primary-blue-transparent)', padding: '7px 15px', borderRadius: '10px' }}>
+                                        <div className="animate-left" style={{width:"fit-content", fontSize: '2rem',color:'var(--primary-blue-dark)', backgroundColor: 'var(--primary-blue-transparent)', padding: '7px 15px', borderRadius: '10px' }}>
                                             {feature.icon}
                                         </div>
                                         <div>
@@ -28,7 +28,7 @@ export const GetInTouch = ()=>{
                                 ))
                             }
                     <br/>
-                    <div style={{background:'var(--light-blue)', padding:'30px 15px', borderRadius:'10px'}}>
+                    <div className="animate-up" style={{background:'var(--light-blue)', padding:'30px 15px', borderRadius:'10px'}}>
                         <b>98% exam pass rate</b>. Our students consistently achieve their certificate goals. Join them today.
                     </div>
                     </div>
