@@ -1,4 +1,4 @@
-import {PhoneOutlined,InstagramOutlined,TwitterOutlined,TikTokOutlined,
+import {PhoneOutlined,InstagramOutlined,FacebookOutlined,TikTokOutlined,
         MailOutlined,
         ArrowRightOutlined,
         SolutionOutlined} from '@ant-design/icons';
@@ -6,6 +6,7 @@ import {PhoneOutlined,InstagramOutlined,TwitterOutlined,TikTokOutlined,
 import { FlatButton } from '../../../shared/FlatButton';
 import businessLogo from '../../../assets/businessLogo.png';
 import { handleEmailSend } from '../../../shared/handleEmailSend';
+import { handleRequest } from '../../../shared/handleRequest';
 export const Footer = ()=>{
     return(
         <footer>
@@ -36,13 +37,13 @@ export const Footer = ()=>{
                 
                         </p>
                         <div  style={{display:'flex', flexDirection:"row", gap:"10px"}}>
-                            <a href="/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/bilinguaschule?utm_source=qr&igsh=ZnM1OThiOHNpNzNk" target="_blank" rel="noopener noreferrer">
                                 <InstagramOutlined style={{ padding:"10px", borderRadius:"12px", fontSize: '30px', background: 'var(--primary-blue-transparent)', color:"gray" }} />
                             </a>
-                            <a href="/" target="_blank" rel="noopener noreferrer">
-                                <TwitterOutlined style={{ padding:"10px", borderRadius:"12px", fontSize: '30px',  background: 'var(--primary-blue-transparent)', color:"gray" }} />
+                            <a href="https://www.facebook.com/share/1CsYhSpSDn/" target="_blank" rel="noopener noreferrer">
+                                <FacebookOutlined style={{ padding:"10px", borderRadius:"12px", fontSize: '30px',  background: 'var(--primary-blue-transparent)', color:"gray" }} />
                             </a>
-                            <a href="/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.tiktok.com/@bilinguaschule?_r=1&_t=ZS-98RTxuuSghZ" target="_blank" rel="noopener noreferrer">
                                 <TikTokOutlined style={{ padding:"10px", borderRadius:"12px", fontSize: '30px', background: 'var(--primary-blue-transparent)', color:"gray" }} />
                             </a>
                         </div>
@@ -51,7 +52,7 @@ export const Footer = ()=>{
                     <div className="col-md-3 mb-4">
                         <h3>Courses </h3>
                         
-                        <a href="/" target="_blank" rel="noopener noreferrer">German courses</a>
+                        <a href="/#courses" >German courses</a>
                         <a href="/" target="_blank" rel="noopener noreferrer">Exam Preparation</a>
                         <a href="/#services" target="_blank" rel="noopener noreferrer">Pricing</a>
 
@@ -75,7 +76,12 @@ export const Footer = ()=>{
                         <p><PhoneOutlined className='me-2' style={{fontSize:"20px", color:"gray", padding:"10px", borderRadius:'5px', background:'var(--primary-blue-transparent)'}} />  +234 903 669 1764</p>
                         <p><MailOutlined className='me-2' style={{fontSize:"20px", color:"gray", padding:"10px", borderRadius:'5px', background:'var(--primary-blue-transparent)'}} />  bilingualschule@yahoo.com</p>
                         <p><SolutionOutlined className='me-2' style={{fontSize:"20px", color:"gray", padding:"10px", borderRadius:'5px', background:'var(--primary-blue-transparent)'}}/>  Enroll Now</p>
-                        <FlatButton title="Contact Us" className="btn btnPrimary btn-lg" icon={<ArrowRightOutlined/>}/>
+                        <FlatButton title="Contact Us" className="btn btnPrimary btn-lg" icon={<ArrowRightOutlined/>}
+                         onClick={() =>
+                        handleRequest(
+                        "Hello! I'm interested in Bilinguaschule's German language courses. I'd like to learn more about your programs, schedules, and enrollment process."
+                        )
+                    }/>
                     </div>
                 </div>
                 <hr/>
