@@ -8,7 +8,7 @@ export const Cta = ()=>{
             <div className="d-flex justify-content-center text-center"
     style={{ padding: "4rem 1rem" }}>
                
-                    <div style={{maxWidth:'750px'}}>
+                    <div style={{maxWidth:'800px'}}>
                         <span className="homeBadgeParentAlt">Begin Your German Learning Journey</span>
                     <h2 className="mt-4">Ready to Start Speaking <span style={{color:'var(--burnished-gold)'}}>German?</span></h2>
                     <br/>
