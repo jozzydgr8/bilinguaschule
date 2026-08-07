@@ -19,7 +19,7 @@ export const Cta = ()=>{
                     <FlatButton
                     icon={<ArrowRightOutlined/>}
                     title="Enroll Today"
-                    className="btn btnAlternate btn-xl animate-up"
+                    className="btn btnAlternate btn-lg animate-up"
                     onClick={() =>
                         handleEmailSend(
                         "German Course Enrollment",
@@ -31,7 +31,7 @@ export const Cta = ()=>{
                     <FlatButton
                     iconTwo={<MailOutlined/>}
                     title="bilinguaschule@yahoo.com"
-                    className="btn btnSecondary btn-xl animate-up"
+                    className="btn btnSecondary btn-lg animate-up"
                     onClick={() =>
                         handleEmailSend(
                         "General Enquiry",

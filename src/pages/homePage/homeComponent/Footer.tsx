@@ -11,12 +11,13 @@ export const Footer = ()=>{
     return(
         <footer>
             <div className="container-fluid">
-                <div className="d-flex justify-content-between align-items-center mb-4">
-                    <div className='animate-left' >
+                <div className=" row align-items-center mb-4">
+                    <div className='animate-left col-md-6 mb-4 mb-md-0' >
                         <h2>Ready to start learning German?</h2>
                         <small style={{color:'gray'}}>Join Bilinguaschule today and start speaking German with confidence.</small>
                     </div>
-                    <FlatButton
+                    <div className='col-md-6 d-flex justify-content-start justify-content-md-end'>
+                        <FlatButton
                     onClick={() =>
                         handleEmailSend(
                         "German Course Enquiry",
@@ -24,6 +25,7 @@ export const Footer = ()=>{
                         )
                     }
                      title='Start learning today' className=' animate-right btn btn-lg btnSecondary' icon={<ArrowRightOutlined/>}/>
+                    </div>
                 </div>
                 <br/>
                 <hr/>
