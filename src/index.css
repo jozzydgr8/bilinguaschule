@@ -139,7 +139,7 @@ nav{
     }
 }
 nav .container-fluid{
-  padding:0 7% ;
+  padding:1% 7% ;
 }
 
 /* hero--hero--hero--hero */
@@ -159,7 +159,7 @@ nav .container-fluid{
 #choose, #expectation{
   background-color: var(--light-blue);
 }
-.choose-card, .course-card, .expectation-card{
+.choose-card, .course-card, .expectation-card, .contact-card{
   background-color: white;
   padding:30px;
   border-radius: 10px;
@@ -195,9 +195,9 @@ footer a {
   margin-bottom: 8px;
 }
 
-/* footer h3{
-  color:var(--burnished-gold)
-} */
+footer h3{
+  color:var(--primary-blue-light);
+}
 
 
 

@@ -10,7 +10,7 @@ export const Potential = ()=>{
                     <div className="col-md-6">
                         <div>
                             <span className='homeBadgeParentAlt'>🚀For Ages 6–14</span>
-                            <h2 className='subheading mt-2'>Unlock Your Child's <span style={{ color: 'var(--primary-blue-light)' }}>Potential</span></h2>
+                            <h2 className='subheading mt-4'>Unlock Your Child's <span style={{ color: 'var(--primary-blue-light)' }}>Potential</span></h2>
                             <p className='subtopic'>Give your child a head start in life! Our specialized German courses turn language learning into an exciting adventure, combining play with proven educational results.</p>
                            
                                 {

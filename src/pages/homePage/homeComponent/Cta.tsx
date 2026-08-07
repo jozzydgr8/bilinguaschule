@@ -4,7 +4,8 @@ import {ArrowRightOutlined, MailOutlined} from '@ant-design/icons'
 export const Cta = ()=>{
     return(
         <section id="cta">
-            <div className="container-fluid text-center d-flex justify-content-center">
+            <div className="d-flex justify-content-center text-center"
+    style={{ padding: "4rem 1rem" }}>
                
                     <div style={{maxWidth:'750px'}}>
                         <span className="homeBadgeParentAlt">Begin Your German Learning Journey</span>
