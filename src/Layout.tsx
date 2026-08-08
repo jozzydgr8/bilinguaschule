@@ -56,7 +56,7 @@ export const Layout = ()=>{
           className="whatsappIcon borderlessbtn"
           onClick={() =>
             handleRequest(
-              "Hi BilingualChule! 👋 I’m interested in learning German with you. I’d love to know more about your classes and how I can get started. 🇩🇪"
+              "Hi BilinguaSchule! 👋 I’m interested in learning German with you. I’d love to know more about your classes and how I can get started. 🇩🇪"
             )
           }
         >
