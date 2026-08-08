@@ -199,6 +199,64 @@ footer h3{
   color:var(--primary-blue-light);
 }
 
+.whatsappIcon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.whatsappIcon img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Chat us now bubble */
+.chatText {
+  background: #25D366;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Small arrow pointing toward WhatsApp icon */
+.chatText::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent #25D366;
+}
+
+@media (max-width: 750px) {
+  .whatsappIcon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .chatText {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .whatsappIcon {
+    bottom: 15px;
+    right: 15px;
+    gap: 7px;
+  }
+}
+
 
 
 /* animation animation animation animation animation animation */
